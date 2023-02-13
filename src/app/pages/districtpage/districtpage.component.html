@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let item of districts">
+            
+            
+            <div class="card" style="width: 18rem ; height: 400px;" > 
+              <img src="{{item.Image}}"  height="200" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.details}}</p>
+                <a (click)="gotohere(item.title)" class="btn btn-primary">Click Here</a>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
